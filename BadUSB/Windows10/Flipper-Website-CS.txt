@@ -1,0 +1,26 @@
+REM This is BadUSB demo script for windows
+
+REM set slightly slower delay to ensure notepad picks up input without skipping characters
+DEFAULT_STRING_DELAY 10
+REM Open windows https://flipper-zero-cs.jimdofree.com/
+DELAY 1000
+GUI r
+DELAY 500
+STRING https://flipper-zero-cs.jimdofree.com/
+DELAY 500
+ENTER
+DELAY 750
+REM Open windows notepad
+DELAY 1000
+GUI r
+DELAY 500
+STRING notepad
+DELAY 500
+ENTER
+DELAY 750
+STRING Hello.
+ENTER
+STRING The website of flipper zero is powered by Citron Software.
+ENTER
+STRING Bye !
+DEFAULT_DELAY 50
